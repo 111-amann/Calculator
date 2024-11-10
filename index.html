@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="calculator">
+      <!-- Display screen for showing input and results, read-only to prevent manual typing -->
+      <input id="display" readonly />
+      <!-- Calculator keys section -->
+      <div id="keys">
+        <!-- Each button calls a JavaScript function when clicked -->
+        <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <!-- '=' button triggers calculation -->
+        <button onclick="calculate()">=</button>
+        <!-- 'C' button clears the display -->
+        <button onclick="cleardisplay()" class="operator-btn">C</button>
+      </div>
+    </div>
+    <!-- Link to external JavaScript file for functionality -->
+    <script src="app.js"></script>
+  </body>
+</html>
