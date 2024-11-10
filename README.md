@@ -9,10 +9,6 @@ A simple calculator web application built with HTML, CSS, and JavaScript. This c
 - Error handling for invalid calculations.
 - Operator buttons with distinct colors for easier usability.
 
-## Screenshots
-
-![Calculator Screenshot](screenshot.png)
-
 ## How to Use
 
 1. Open `index.html` in your web browser.
