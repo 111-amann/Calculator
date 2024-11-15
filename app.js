@@ -18,12 +18,18 @@ function cleardisplay() {
 
 /**
  * Evaluates the expression shown in the display.
- * If the expression is invalid, it shows "Error".
+ * If the expression is invalid or includes division by zero, it shows "Error".
  */
 function calculate() {
   try {
-    display.value = eval(display.value);
+    // Check for division by zero
+    if (display.value.includes('/0')) {
+      display.value = "Error"; // Display "Error" for division by zero
+    } else {
+      display.value = eval(display.value); // Evaluate the expression
+    }
   } catch {
-    display.value = "Error";
+    display.value = "Error"; // Handle any other errors
   }
 }
+
